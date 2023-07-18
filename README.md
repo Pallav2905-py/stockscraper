@@ -34,7 +34,7 @@ The code is divided into two classes: FetchStocks and FetchStocksData.
     ### Do the above step only for firsttime
     ### No need to run this again, as long as you see a StockLink.txt in your folder.
 
-    `obj_1 = stockscraper.FetchStocks(stockname,stinfo)` <br<
+    `obj_1 = stockscraper.FetchStocks(stockname,stinfo)` <br>
     once you get all the name and corresponding links of stocks, create a new object of class **FetchStockData**<br>
     It takes two arrays as an argument to store stock name and stockinfo
 
