@@ -1,4 +1,4 @@
-**# StockScraper**
+#** StockScraper**
 ![Alt Text](/main.png)
 ## Introduction
 Stock Ratio Scraper is a Python web scraping program designed to fetch financial ratios for various stocks from a specific website. It scrapes stock names and links and then retrieves financial ratios such as MarketCap, CurrentPrice, StockPE, and more. The fetched data is stored in separate text files for further analysis or reference.
