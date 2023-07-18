@@ -1,5 +1,4 @@
 # stockscraper
-<br>
 ![Alt Text](/main.png)
 
 ## Introduction
