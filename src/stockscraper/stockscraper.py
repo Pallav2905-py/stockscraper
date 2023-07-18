@@ -18,7 +18,7 @@ class FetchStocks:
     def __init__(self,stockname,stinfo):
         print("Stay Back, This Process can take upto Several Minutes")
         #Getting StockInfo : 
-        for i in tqdm (range (1,2), desc="Fetching Stocks"):
+        for i in tqdm (range (1,128), desc="Fetching Stocks"):
             url = "https://www.screener.in/screens/71064/all-stocks/?page=" + str(i)
             headers = {'User-Agent': 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_10_1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/39.0.2171.95 Safari/537.36'}
             r = requests.get(url, headers=headers)
