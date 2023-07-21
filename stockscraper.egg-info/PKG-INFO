@@ -1,3 +1,37 @@
+Metadata-Version: 2.1
+Name: stockscraper
+Version: 0.1.0
+Summary: A Tool for collecting stock data, to do fundamental analysis and does not predict or recommend any stock in particular.
+Home-page: https://github.com/pallav2905-py/stockscraper
+Author: Pallav
+License: MIT License
+        
+        Copyright (c) 2023 Pallav
+        
+        Permission is hereby granted, free of charge, to any person obtaining a copy
+        of this software and associated documentation files (the "Software"), to deal
+        in the Software without restriction, including without limitation the rights
+        to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+        copies of the Software, and to permit persons to whom the Software is
+        furnished to do so, subject to the following conditions:
+        
+        The above copyright notice and this permission notice shall be included in all
+        copies or substantial portions of the Software.
+        
+        THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+        IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+        FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+        AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+        LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+        OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+        SOFTWARE.
+        
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Operating System :: OS Independent
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
 # stockscraper
 
 ## Introduction
@@ -30,9 +64,9 @@ The code is divided into two classes: FetchStocks and FetchStocksData.
 
 2. Creating an Object to Get Names and corresponding links of stocks 
     ### Do the above step only for firsttime
+    ### No need to run this again, as long as you see a StockLink.txt in your folder.
 
     `obj_1 = stockscraper.FetchStocks(stockname,stinfo)` <br>
-    ### No need to run the above line again, as long as you see a StockLink.txt in your folder.
     once you get all the name and corresponding links of stocks, create a new object of class **FetchStockData**<br>
     It takes two arrays as an argument to store stock name and stockinfo
 
