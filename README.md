@@ -31,16 +31,16 @@ The code is divided into two classes: FetchStocks and FetchStocksData.
 2. Creating an Object to Get Names and corresponding links of stocks 
     ### Do the above step only for firsttime
 
-    `obj_1 = stockscraper.FetchStocks(stockname,stinfo)` <br>
+    `obj_1 = stockscraper.fetchStocks(stockname,stinfo)` <br>
     ### No need to run the above line again, as long as you see a StockLink.txt in your folder.
     once you get all the name and corresponding links of stocks, create a new object of class **FetchStockData**<br>
     It takes two arrays as an argument to store stock name and stockinfo
 
-    `obj_2 = stockscraper.FetchStockData(stinfo)`<br>
+    `obj_2 = stockscraper.fetchStockData(stinfo)`<br>
     This will get data of each stock and store them in a comman array.
     It takes one array as an argument.
 
-    `stockscraper.FetchStockData.GetRatios()`<br>
+    `stockscraper.fetchStockData.getRatios()`<br>
     It takes 8 array's as argument, to sort and store each data seperately obtained from above line individually.<br>
     The array arg's should be in order<br>
     - MarketCap,
@@ -52,7 +52,7 @@ The code is divided into two classes: FetchStocks and FetchStocksData.
     - ROE,
     - FaceValue.
 
-    `stockscraper.FetchStockData.ExportRatios()`<br>
+    `stockscraper.fetchStockData.exportRatios()`<br>
     It Stores all the Ratios obtained earlier in a .txt file for furthur usage<br>
     It takes 8 arrays as an argument in order MarketCap,CurrentPrice,StockPE,BookValue,DividendYield,ROCE,ROE,FaceValue.
 

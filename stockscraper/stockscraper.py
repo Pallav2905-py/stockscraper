@@ -6,7 +6,7 @@ from bs4 import BeautifulSoup
 import time
 from tqdm import tqdm
 
-class FetchStocks:
+class fetchStocks:
     def Load(self,array,filename="Default"):
         with open(filename+".txt") as fr:
             for line in tqdm(fr,desc="Loading"):
@@ -18,7 +18,7 @@ class FetchStocks:
     def __init__(self,stockname,stinfo):
         print("Stay Back, This Process can take upto Several Minutes")
         #Getting StockInfo : 
-        for i in tqdm (range (1,2), desc="Fetching Stocks"):
+        for i in tqdm (range (1,128), desc="Fetching Stocks"):
             url = "https://www.screener.in/screens/71064/all-stocks/?page=" + str(i)
             headers = {'User-Agent': 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_10_1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/39.0.2171.95 Safari/537.36'}
             r = requests.get(url, headers=headers)
@@ -36,8 +36,9 @@ class FetchStocks:
         self.Store(stockname,"Stockname")
         self.Store(stinfo,"StockLink")
 
-        return arr 
-class FetchStockData:
+
+    
+class fetchStockData:
 
     def Load(self,array,filename="Default"):
         with open(filename+".txt") as fr:
@@ -82,7 +83,7 @@ class FetchStockData:
             
             time.sleep(0.5)
 
-    def GetRatios(self,MarketCap,CurrentPrice,StockPE,BookValue,DividendYield,ROCE,ROE,FaceValue):
+    def getRatios(self,MarketCap,CurrentPrice,StockPE,BookValue,DividendYield,ROCE,ROE,FaceValue):
         global Rvalue, Rname
         #Making Temp Arrays
         TempCap = []
@@ -131,7 +132,7 @@ class FetchStockData:
         
         return MarketCap,CurrentPrice,StockPE,BookValue,DividendYield,ROCE,ROE,FaceValue
 
-    def ExportRatios(self,stockname,MarketCap,CurrentPrice,StockPE,BookValue,DividendYield,ROCE,ROE,FaceValue):
+    def exportRatios(self,stockname,MarketCap,CurrentPrice,StockPE,BookValue,DividendYield,ROCE,ROE,FaceValue):
 
         #To Store in a File
         StoreRatios =[]
